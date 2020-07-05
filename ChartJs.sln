@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libChart", "libChart\libChart.csproj", "{3ED8A6B0-B19D-4D07-B276-0DAE8A17C1E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testChartJs", "testChartJs\testChartJs.csproj", "{BBF63535-A07A-4E5A-A1BC-08045C0B201E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3ED8A6B0-B19D-4D07-B276-0DAE8A17C1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ED8A6B0-B19D-4D07-B276-0DAE8A17C1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ED8A6B0-B19D-4D07-B276-0DAE8A17C1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF63535-A07A-4E5A-A1BC-08045C0B201E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF63535-A07A-4E5A-A1BC-08045C0B201E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF63535-A07A-4E5A-A1BC-08045C0B201E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF63535-A07A-4E5A-A1BC-08045C0B201E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
