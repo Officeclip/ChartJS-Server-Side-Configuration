@@ -7,3 +7,8 @@
 /ChartJs/packages/Newtonsoft.Json.12.0.3
 /ChartJs/packages/Newtonsoft.Json.6.0.4
 /.vs/ChartJs/v16
+/libChart/bin/Debug
+/libChart/*.user
+/libChart/obj/Debug
+/packages/Newtonsoft.Json.12.0.3
+/packages/Newtonsoft.Json.6.0.4
