@@ -1,2 +1,8 @@
 /ChartJs/.vs/ChartJs/v16/.suo
 /ChartJs/libChart/bin/Debug/*.dll
+/ChartJs/libChart/bin/Debug/*.pdb
+/ChartJs/libChart/bin/Debug
+/ChartJs/libChart/*.user
+/ChartJs/libChart/obj/Debug
+/ChartJs/packages/Newtonsoft.Json.12.0.3
+/ChartJs/packages/Newtonsoft.Json.6.0.4
