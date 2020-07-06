@@ -33,8 +33,8 @@ namespace testChartJs
                     Label = i.ToString(),
                     Data = Util.CreateRandomInts(60, 230),
                     BorderWidth = 1,
-                    BackgroundColor = Util.GetColors(i % 5),
-                    BorderColor = Util.GetColors(i % 5)[0],
+                    BackgroundColor = LibChart.Util.GetColors(i % 5),
+                    BorderColor = LibChart.Util.GetColors(i % 5)[0],
                     Fill = false
                 };
                 dataSets.Add(dataSetItem);
