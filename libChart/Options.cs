@@ -6,6 +6,7 @@ using System.Security.AccessControl;
 
 namespace ChartServerConfiguration.Model
 {
+    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Options
     {
         public Options()
@@ -19,10 +20,11 @@ namespace ChartServerConfiguration.Model
         public int DefaultFontSize { get; set; } = 50;
         public Title Title { get; set; }
         [DefaultValue(true)]
-        public bool Responsive { get; set; } = true;       
+        public bool Responsive { get; set; } = true;
 
     }
 
+    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Title
     {
         public string Text { get; set; }
@@ -35,6 +37,7 @@ namespace ChartServerConfiguration.Model
 
     }
 
+    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Scales
     {
         public Scales()
@@ -46,11 +49,13 @@ namespace ChartServerConfiguration.Model
         public List<TicksItem>  YAxes { get; set; }
     }
 
+    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class TicksItem
     {
         public Ticks ticks { get; set; }
     }
 
+    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Ticks
     {
         [DefaultValue(true)]

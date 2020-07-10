@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace ChartServerConfiguration.Model
 {
+    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class DataSetItem
     {
         public string Label { get; set; }
