@@ -21,6 +21,7 @@ namespace ChartServerConfiguration.Model
         public Title Title { get; set; }
         [DefaultValue(true)]
         public bool Responsive { get; set; } = true;
+        public bool SpanGaps { get; set; } = true;
 
     }
 
@@ -70,6 +71,7 @@ namespace ChartServerConfiguration.Model
         [DefaultValue(0)]
         public int MaxTicksLimit { get; set; } = 0;
 
+        [DefaultValue(false)]
         public JRaw Callback { get; set; } //https://stackoverflow.com/a/16800514/89256
     }
 }
