@@ -19,11 +19,11 @@ namespace testChartJs
             return labels;
         }
 
-        public static List<int> CreateRandomInts(int length, int maxValue)
+        public static List<int?> CreateRandomInts(int length, int maxValue)
         {
             Thread.Sleep(10);
             var rand = new Random((int)DateTime.Now.Ticks);
-            var rtnlist = new List<int>();
+            var rtnlist = new List<int?>();
 
             for (int i = 0; i < length; i++)
             {
