@@ -53,12 +53,14 @@ namespace testChartJs
             {
                 Label = "Billable",
                 Data = new List<int?> { 8, 1, 7, 5 },
+                BackgroundColor = new List<string>() {"red", "red" , "red" , "red" }
             };
             dataSets.Add(dataSetItem);
             dataSetItem = new DataSetItem()
             {
                 Label = "Non-Billable",
                 Data = new List<int?> { 1, 3, 1, 5 },
+                BackgroundColor = new List<string>() { "green", "green", "green", "green" }
             };
             dataSets.Add(dataSetItem);
 
