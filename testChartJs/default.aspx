@@ -11,6 +11,9 @@
         <div>
             <a href="test.aspx">Test Chart</a>
         </div>
+        <div>
+            <a href="TimesheetHoursData.aspx">Timesheet Hours</a>
+        </div>
     </form>
 </body>
 </html>
