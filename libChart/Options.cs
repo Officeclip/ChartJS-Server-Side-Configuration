@@ -43,18 +43,25 @@ namespace ChartServerConfiguration.Model
     {
         public Scales()
         {
-            XAxes = new List<TicksItem>();
-            YAxes = new List<TicksItem>();
+            XAxes = new List<AxesItem>();
+            YAxes = new List<AxesItem>();
         }
-        public List<TicksItem> XAxes { get; set; }
-        public List<TicksItem>  YAxes { get; set; }
+        public List<AxesItem> XAxes { get; set; }
+        public List<AxesItem>  YAxes { get; set; }
     }
 
     [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
-    public class TicksItem
+    public class AxesItem
     {
+        public bool stacked { get; set; } = false;
         public Ticks ticks { get; set; }
     }
+
+    //[JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
+    //public class TicksItem
+    //{
+    //    public Ticks ticks { get; set; }
+    //}
 
     [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Ticks

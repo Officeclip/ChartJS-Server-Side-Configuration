@@ -92,10 +92,10 @@ namespace testChartJs
 
             var chartConfig = new ChartConfiguration
             {
-                Type = ChartType.line.GetChartType(),
+                Type = ChartType.bar.GetChartType(),
                 Data =
                 {
-                    Labels = new List<string>{"Jan 1", "Jan 2", "Jan 3", "Jan 4" },
+                    Labels = new List<string> { "Jan 1", "Jan 2", "Jan 3", "Jan 4" },
                     Datasets = dataSets
                 },
                 Options =
@@ -104,17 +104,17 @@ namespace testChartJs
                     {
                         Text = "My Test Chart"
                     },
-                    //Scales = new Scales()
-                    //{
-                    //    XAxes = new List<TicksItem>()
-                    //    {
-                    //        xAxesTicksItem
-                    //    },
-                    //    YAxes = new List<TicksItem>()
-                    //    {
-                    //        yAxesTicksItem
-                    //    }
-                    //}
+                    Scales = new Scales()
+                    {
+                        XAxes = new List<AxesItem>()
+                        {
+                           new AxesItem(){stacked = true }
+                        },
+                        YAxes = new List<AxesItem>()
+                        {
+                           new AxesItem(){stacked = true }
+                        }
+                    }
                 }
             };
             return chartConfig;

@@ -53,7 +53,7 @@ namespace testChartJs
                 Callback = (new JRaw(xAxesCallback))
             };
 
-            var xAxesTicksItem = new TicksItem() { ticks = xAxesTicks };
+            var xAxesTicksItem = new AxesItem() { ticks = xAxesTicks };
 
 
             var yAxesCallback = $@"function (value, index, values) {{
@@ -65,7 +65,7 @@ namespace testChartJs
                 Callback = new JRaw(yAxesCallback)
             };
 
-            var yAxesTicksItem = new TicksItem() { ticks = yAxesTicks };
+            var yAxesTicksItem = new AxesItem() { ticks = yAxesTicks };
 
             var chartConfig = new ChartConfiguration
             {
@@ -83,11 +83,11 @@ namespace testChartJs
                     },
                     Scales = new Scales()
                     {
-                        XAxes = new List<TicksItem>()
+                        XAxes = new List<AxesItem>()
                         {
                             xAxesTicksItem
                         },
-                        YAxes = new List<TicksItem>()
+                        YAxes = new List<AxesItem>()
                         {
                             yAxesTicksItem
                         }
