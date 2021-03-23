@@ -24,20 +24,6 @@ namespace testChartJs
             return ds;
         }
 
-        private List<Tuple<string, List<int?>>> GetChartData()
-        {
-            var returnValue = new List<Tuple<string, List<int?>>>();
-            var tuple = new Tuple<string, List<int?>>(
-                                                "Billable", 
-                                                new List<int?> { 8, 1, 7, 5 });
-            returnValue.Add(tuple);
-            tuple = new Tuple<string, List<int?>>(
-                                                "Non-Billable",
-                                                new List<int?> { 1, 3, 1, 5 });
-            returnValue.Add(tuple);
-            return returnValue;
-        }
-         
         protected void Page_Load(object sender, EventArgs e)
         {
             var chartConfig = CreateServerConfiguration();
@@ -63,34 +49,6 @@ namespace testChartJs
                 BackgroundColor = new List<string>() { "green", "green", "green", "green" }
             };
             dataSets.Add(dataSetItem);
-
-            //var xAxesCallback = @"function (value, index, values) {
-            //                            if (value > 0) { value = -1 * value;}
-            //                            return value + ' min';
-            //                        }";
-
-            //var xAxesTicks = new Ticks()
-            //{
-            //    Display = true,
-            //    BeginAtZero = true,
-            //    Max = 60,
-            //    MaxTicksLimit = 12,
-            //    Callback = (new JRaw(xAxesCallback))
-            //};
-
-            //var xAxesTicksItem = new TicksItem() { ticks = xAxesTicks };
-
-
-            //var yAxesCallback = $@"function (value, index, values) {{
-            //                            return value + ' {unit}';
-            //                        }}";
-
-            //var yAxesTicks = new Ticks()
-            //{
-            //    Callback = new JRaw(yAxesCallback)
-            //};
-
-            //var yAxesTicksItem = new TicksItem() { ticks = yAxesTicks };
 
             var chartConfig = new ChartConfiguration
             {
