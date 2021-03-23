@@ -64,19 +64,19 @@ namespace testChartJs
             };
             dataSets.Add(dataSetItem);
 
-            var xAxesCallback = @"function (value, index, values) {
-                                        if (value > 0) { value = -1 * value;}
-                                        return value + ' min';
-                                    }";
+            //var xAxesCallback = @"function (value, index, values) {
+            //                            if (value > 0) { value = -1 * value;}
+            //                            return value + ' min';
+            //                        }";
 
-            var xAxesTicks = new Ticks()
-            {
-                Display = true,
-                BeginAtZero = true,
-                Max = 60,
-                MaxTicksLimit = 12,
-                Callback = (new JRaw(xAxesCallback))
-            };
+            //var xAxesTicks = new Ticks()
+            //{
+            //    Display = true,
+            //    BeginAtZero = true,
+            //    Max = 60,
+            //    MaxTicksLimit = 12,
+            //    Callback = (new JRaw(xAxesCallback))
+            //};
 
             //var xAxesTicksItem = new TicksItem() { ticks = xAxesTicks };
 
