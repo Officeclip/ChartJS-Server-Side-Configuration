@@ -17,6 +17,9 @@
         <div>
             <a href="IssueStatus.aspx">Issue Status</a>
         </div>
+        <div>
+            <a href="Funnel.aspx">Funnel</a>
+        </div>
     </form>
 </body>
 </html>

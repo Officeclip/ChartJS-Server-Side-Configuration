@@ -22,6 +22,7 @@ namespace ChartServerConfiguration.Model
         [DefaultValue(true)]
         public bool Responsive { get; set; } = true;
         public bool SpanGaps { get; set; } = true;
+        public string Sort { get; set; }
 
     }
 

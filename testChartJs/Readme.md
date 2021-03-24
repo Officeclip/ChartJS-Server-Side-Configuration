@@ -1,0 +1,1 @@
+﻿Funnel Chart from: https://github.com/xch89820/Chart.Funnel.js/
