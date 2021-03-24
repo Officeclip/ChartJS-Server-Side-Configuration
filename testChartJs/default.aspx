@@ -14,6 +14,9 @@
         <div>
             <a href="TimesheetHoursData.aspx">Timesheet Hours</a>
         </div>
+        <div>
+            <a href="IssueStatus.aspx">Issue Status</a>
+        </div>
     </form>
 </body>
 </html>
