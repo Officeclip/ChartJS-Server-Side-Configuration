@@ -70,8 +70,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chart.funnel.bundled.js" />
     <Content Include="default.aspx" />
+    <Content Include="Funnel.aspx" />
+    <Content Include="test.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="IssueStatus.aspx" />
+    <Content Include="TimesheetHoursData.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -82,14 +87,43 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Funnel.aspx.cs">
+      <DependentUpon>Funnel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funnel.aspx.designer.cs">
+      <DependentUpon>Funnel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IssueStatus.aspx.cs">
+      <DependentUpon>IssueStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueStatus.aspx.designer.cs">
+      <DependentUpon>IssueStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetHoursData.aspx.cs">
+      <DependentUpon>TimesheetHoursData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimesheetHoursData.aspx.designer.cs">
+      <DependentUpon>TimesheetHoursData.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Readme.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

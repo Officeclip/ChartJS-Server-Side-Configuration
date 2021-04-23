@@ -11,6 +11,7 @@ namespace ChartServerConfiguration.Model
         polarArea,
         pie,
         doughnut,
-        bubble
+        bubble,
+        funnel
     }
 }

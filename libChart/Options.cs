@@ -47,7 +47,7 @@ namespace ChartServerConfiguration.Model
             YAxes = new List<TicksItem>();
         }
         public List<TicksItem> XAxes { get; set; }
-        public List<TicksItem>  YAxes { get; set; }
+        public List<TicksItem> YAxes { get; set; }
     }
 
     [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
