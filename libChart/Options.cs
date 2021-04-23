@@ -22,7 +22,6 @@ namespace ChartServerConfiguration.Model
         [DefaultValue(true)]
         public bool Responsive { get; set; } = true;
         public bool SpanGaps { get; set; } = true;
-        public string Sort { get; set; }
 
     }
 
@@ -44,25 +43,18 @@ namespace ChartServerConfiguration.Model
     {
         public Scales()
         {
-            XAxes = new List<AxesItem>();
-            YAxes = new List<AxesItem>();
+            XAxes = new List<TicksItem>();
+            YAxes = new List<TicksItem>();
         }
         public List<TicksItem> XAxes { get; set; }
         public List<TicksItem> YAxes { get; set; }
     }
 
     [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
-    public class AxesItem
+    public class TicksItem
     {
-        public bool stacked { get; set; } = false;
         public Ticks ticks { get; set; }
     }
-
-    //[JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
-    //public class TicksItem
-    //{
-    //    public Ticks ticks { get; set; }
-    //}
 
     [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public class Ticks
